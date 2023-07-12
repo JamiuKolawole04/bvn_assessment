@@ -27,7 +27,7 @@ class AuthController extends Controller
         return $this->success([
             "user" => $user,
             "token" => $user->createToken("API token of " . $user->name)->plainTextToken
-        ], "signup success");
+        ], "signup success", 201);
     }
 
     public function login(LoginRequest $request)  
