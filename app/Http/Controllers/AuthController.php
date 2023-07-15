@@ -26,7 +26,6 @@ class AuthController extends Controller
         
         return $this->success([
             "user" => $user,
-            "token" => $user->createToken("API token of " . $user->name)->plainTextToken
         ], "signup success", 201);
     }
 
@@ -43,7 +42,6 @@ class AuthController extends Controller
 
         return $this->success([
             "user" => $user,
-            "token" => $user->createToken("API tojen of" . $user->name)->plainTextToken
         ], 'login success');
     }
 }
