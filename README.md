@@ -14,10 +14,23 @@
 
 ## Installation
 
--   To run this service, you need to have the following dependencies installed:
+To run this service, you need to have the following dependencies installed:
 
-Nodejs [version 10 or Greater](https://nodejs.org/).
-Composer (https://getcomposer.org/)
+-   Nodejs [version 10 or Greater](https://nodejs.org/).
+-   Composer (https://getcomposer.org/)
+-   MySql or Phpmyadmin
+
+*   Download or clone this application to your computer `https://github.com/JamiuKolawole04/bvn_assessment.git && cd bvn_assessment`
+*   Navigate to the project directory
+*   Install NPM dependencies using `npm install`
+*   Install composer dependencies using `composer install`
+*   Make a copy of the .env.example file and create a .env
+*   Generate an encryption key using `php artisan key:generate`
+*   Create an empty database for the application
+*   In the .env file, add database information to allow Laravel to connect to the database.Information like `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`
+*   Migrate the database using `php artisan migrate`
+*   Start the server by using `php artisan serve`
+*   Go to http://localhost:8000
 
 ## About Laravel
 
